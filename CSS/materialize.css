@@ -4358,7 +4358,7 @@ nav ul a:hover {
 }
 
 nav ul.left {
-  float: left;
+  float: right;
 }
 
 nav form {
@@ -7388,10 +7388,12 @@ input[type=range]:focus::-ms-fill-upper {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+
+
 .side-nav li > a {
   color: white;
   display: block;
-  margin-left: 40%;
+  margin-left: 45px;
   margin-top: 40px;
   font-size: 24px;
   font-weight: 500;

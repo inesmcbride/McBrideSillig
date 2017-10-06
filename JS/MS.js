@@ -1,26 +1,33 @@
 $(document).ready(function(){
-  
+    
     $('.parallax').parallax();
     
     $(".button-collapse").sideNav();
   
-
   
-  });
-  
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
-});
   
 $(window).on("scroll", function() {
     if($(window).scrollTop() > $(window).height() ) {
         $("#navigation").addClass("active");
     } else {
-        //remove the background property so it comes transparent again (defined in your css)
        $("#navigation").removeClass("active");
     }
 });
+  
+  });
+  
+$('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 300
+      edge: 'left', // Choose the horizontal origin
+      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true, // Choose whether you can drag to open on touch screens,
+      
+    }
+  );
+  
+
+  
+  
+
+
+  

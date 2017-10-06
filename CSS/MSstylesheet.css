@@ -22,13 +22,23 @@ i{
   padding-right: 30px;
 }
 
+.nav-fixed{
+  z-index: 997;
+}
 #navigation{
   display: none;
 }
 
 #navigation.active{
-  display: block;
+  display: flex;
 }
+
+@media only screen and (max-width: 600px) {
+  .parallax-title img{
+  width: 80%;
+}
+}
+
 
 #home.parallax-container {
       height: 100vh;
@@ -49,9 +59,11 @@ i{
 }
 
 .container{
-  text-align: justify;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+p .container {
+  text-align: justify;
 }
 
 .section{
@@ -63,6 +75,3 @@ i{
   padding-bottom: 3rem;
 }
 
-.row .col.offset-l1 {
-/*  padding-left: 0.3333333%;*/
-}
