@@ -25,6 +25,7 @@ i{
 .nav-fixed{
   z-index: 997;
 }
+
 #navigation{
   display: none;
 }
@@ -33,6 +34,9 @@ i{
   display: flex;
 }
 
+.side-nav a {
+  font-family: "Raleway", sans-serif;
+}
 @media only screen and (max-width: 600px) {
   .parallax-title img{
   width: 80%;
