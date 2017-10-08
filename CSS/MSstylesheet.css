@@ -26,6 +26,10 @@ i{
   z-index: 997;
 }
 
+.nav-wrapper{
+  padding-right: 10px;
+}
+
 #navigation{
   display: none;
 }
@@ -79,3 +83,10 @@ p .container {
   padding-bottom: 3rem;
 }
 
+#contact a{
+  color: black;
+}
+
+#contact a:hover{
+  font-weight: 400;
+}
