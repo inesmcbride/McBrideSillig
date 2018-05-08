@@ -5,8 +5,6 @@ $(document).ready(function(){
     $(".button-collapse").sideNav();
   
   
-  
-  
 $(window).on("scroll", function() {
     if($(window).scrollTop() > $(window).height() ) {
         $("#navigation").addClass("active");
@@ -34,6 +32,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
         scrollTop: $($.attr(this, 'href')).offset().top - navheight
     }, 500);
 });
+
 
 
 
